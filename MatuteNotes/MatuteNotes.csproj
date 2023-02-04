@@ -47,8 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\IUnitOfWork.cs" />
     <Compile Include="Domain\Models\StickyNote.cs" />
     <Compile Include="Domain\Models\Usuary.cs" />
+    <Compile Include="Domain\Queries\StickyQueries\StickyQuery.cs" />
+    <Compile Include="Domain\Queries\StickyQueries\StickyQueryParams.cs" />
+    <Compile Include="Domain\Repositories\IStickyNoteRepository.cs" />
+    <Compile Include="Domain\Repositories\IUserRepository.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,8 +90,6 @@
   <ItemGroup>
     <Folder Include="DataAcces\AdoNet\" />
     <Folder Include="DataAcces\Repositories\" />
-    <Folder Include="Domain\Queries\" />
-    <Folder Include="Domain\Repositories\" />
     <Folder Include="Helpers\" />
     <Folder Include="MVC\Controllers\" />
     <Folder Include="MVC\Models\" />

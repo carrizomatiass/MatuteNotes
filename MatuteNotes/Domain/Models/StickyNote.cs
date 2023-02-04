@@ -15,16 +15,16 @@ namespace MatuteNotes.Domain.Models
 
         public StickyNote()
         {
-            _id = string.Empty;
-            _cliente = string.Empty;
-            _createdDate = DateTime.Now;
-            _editedDate = DateTime.Now;
-            _content = string.Empty;
-            _completed = false;
-            _idUser = string.Empty;
-            _priority = false;
-            _deleted = false;
-            _height = 142;
+            Id = string.Empty;
+            Cliente = string.Empty;
+            CreatedDate = DateTime.Now;
+            EditedDate = DateTime.Now;
+            Content = string.Empty;
+            Completed = false;
+            IdUser = string.Empty;
+            Priority = false;
+            Deleted = false;
+            Height = 142;
         }
 
         private string _id;
@@ -49,6 +49,8 @@ namespace MatuteNotes.Domain.Models
         public bool Priority { get => _priority; set => _priority = value; }
         public bool Deleted { get => _deleted; set => _deleted = value; }
         public int Height { get => _height; set => _height = value; }
+
+        
 
     }
 }
