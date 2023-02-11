@@ -11,6 +11,6 @@ namespace MatuteNotes.Domain
     {
 
         IStickyNoteRepository Stickys { get; }
-        IUserRepository users { get; }
+        IUserRepository Users { get; }
     }
 }

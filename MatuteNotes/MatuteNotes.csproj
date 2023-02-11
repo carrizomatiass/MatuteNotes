@@ -47,6 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAcces\AdoNet\AdoContext.cs" />
+    <Compile Include="DataAcces\Repositories\StickyNotesRepository.cs" />
+    <Compile Include="DataAcces\Repositories\UserRepository.cs" />
+    <Compile Include="DataAcces\UnitOfWork.cs" />
     <Compile Include="Domain\IUnitOfWork.cs" />
     <Compile Include="Domain\Models\StickyNote.cs" />
     <Compile Include="Domain\Models\Usuary.cs" />
@@ -88,8 +92,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DataAcces\AdoNet\" />
-    <Folder Include="DataAcces\Repositories\" />
     <Folder Include="Helpers\" />
     <Folder Include="MVC\Controllers\" />
     <Folder Include="MVC\Models\" />
