@@ -19,8 +19,8 @@ namespace MatuteNotes.DataAcces
         public UnitOfWork()
         {
             _adoContext = new AdoContext(adoNetUrl);
-            Stickys = new StickyNotesRepository();
-            Users = new UserRepository();
+            Stickys = new StickyNotesRepository(_adoContext);
+            Users = new UserRepository(_adoContext);
 
         }
 

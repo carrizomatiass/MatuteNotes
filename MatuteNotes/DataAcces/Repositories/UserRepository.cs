@@ -1,4 +1,5 @@
-﻿using MatuteNotes.Domain.Models;
+﻿using MatuteNotes.DataAcces.AdoNet;
+using MatuteNotes.Domain.Models;
 using MatuteNotes.Domain.Repositories;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,12 @@ namespace MatuteNotes.DataAcces.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        //asdasdasd
+        public readonly AdoContext _adoContext;
+
+        public UserRepository(AdoContext adoContext)
+        {
+            _adoContext = adoContext;
+        }
         public Task<IEnumerable<Usuary>> GetLogin(string usuario)
         {
             throw new NotImplementedException();

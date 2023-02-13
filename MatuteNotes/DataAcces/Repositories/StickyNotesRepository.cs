@@ -1,4 +1,5 @@
-﻿using MatuteNotes.Domain.Models;
+﻿using MatuteNotes.DataAcces.AdoNet;
+using MatuteNotes.Domain.Models;
 using MatuteNotes.Domain.Queries.StickyQueries;
 using MatuteNotes.Domain.Repositories;
 using System;
@@ -9,9 +10,16 @@ using System.Threading.Tasks;
 
 namespace MatuteNotes.DataAcces.Repositories
 {
+   
     public class StickyNotesRepository : IStickyNoteRepository
     {
-        //asdasdasdasd
+        public readonly AdoContext _adoContext;
+
+        public StickyNotesRepository(AdoContext adoContext)
+        {
+            _adoContext = adoContext;
+        }
+
         public Task<IEnumerable<StickyQuery>> GetListado(StickyQueryParams @params)
         {
             throw new NotImplementedException();
